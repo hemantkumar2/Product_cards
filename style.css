@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* carousel styles  */
+.owl-carousel .owl-dot {
+  display: none !important;
+}
+
+.owl-nav > button,
+.owl-nav > .cart.table-wrapper .actions-toolbar > .action,
+.owl-nav > .action-gift {
+  position: absolute;
+  top: 50%;
+  top: calc((100% - 54px) / 2 - 25px);
+  height: 50px;
+  width: 30px;
+  font-size: 0;
+  box-shadow: none;
+  background: 0 0;
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 0;
+  outline: none;
+}
+
+.owl-prev {
+  left: 0;
+}
+.owl-next {
+  right: 0;
+}
+.owl-nav > button:before,
+.owl-nav > .cart.table-wrapper .actions-toolbar > .action:before,
+.owl-nav > .action-gift:before {
+  content: "";
+  border: solid #ccc;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  top: calc(50% - 10px);
+}
+.owl-prev:before {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  left: 10px;
+}
+.owl-next:before {
+  transform: rotate(50deg);
+  -webkit-transform: rotate(-50deg);
+  right: 10px;
+}
+.carousel-padding {
+  margin: 1rem !important;
+}
+
+button .owl-next {
+  box-sizing: unset;
+}
+/* styles for product suggestions */
+.product-suggestion {
+  min-width: 70%;
+  max-width: 100%;
+  text-align: left;
+  line-height: 0.1em;
+  margin: 10px 0 20px;
+  background-image: linear-gradient(90deg, black, transparent);
+  border: 0;
+  height: 1px;
+}
+.product {
+  min-width: 5%;
+  max-width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #000;
+  line-height: 0.1em;
+  margin: 10px 0 20px;
+}
+
+.product-suggestion span {
+  background: #fff;
+  padding: 0 10px;
+}
+
+/* typography for production suggestion  */
+.style-font-des {
+  font-family: "Julius Sans One", sans-serif;
+  font-weight: 12px;
+  line-height: 18px;
+  color: #333333;
+}
+.container {
+  margin-top: 10vh;
+}
